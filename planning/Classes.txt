@@ -1,0 +1,25 @@
+Users
+    User ID
+    Username
+    Firstname
+    Surname
+    E-Mail
+    Creation Date
+    Password Hash
+
+Products
+    Product ID
+    Product Name
+    product Details
+    Price
+
+Orders
+    Order ID
+    User ID
+    Date/Time
+    Total Price
+
+Details
+    Order ID
+    Product ID
+    Quantity
