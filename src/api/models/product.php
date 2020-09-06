@@ -1,5 +1,5 @@
 <?php
-    class User{
+    class Product{
 
         // Database Connection
         private $conn;
@@ -18,7 +18,7 @@
 
         }
 
-        // Returns all of the users.
+        // Returns all of the prodcuts.
         public function all(){
 
             $query = 'SELECT * FROM ' . "$this->table";
@@ -31,7 +31,7 @@
 
         }
 
-        // Returns a single user based on the user ID.
+        // Returns a single product based on the product ID.
         public function single(){
 
             $query = 'SELECT * FROM ' . "$this->table" . ' WHERE productid = ? LIMIT 1'; // Query
@@ -53,7 +53,7 @@
             return $this;
         }
 
-        // Function to create a new user.
+        // Function to create a new product.
         public function create(){
             //Query
             $query = 'INSERT INTO ' . $this->table . '
@@ -86,7 +86,7 @@
 
         }
         
-        // Function to update a user based on the user ID.
+        // Function to update a product based on the product ID.
         public function update(){
             
             $query = 'UPDATE ' . $this->table . '
@@ -120,7 +120,7 @@
 
         }
 
-        // Function to delete a user based on the user ID.
+        // Function to delete a product based on the product ID.
         public function delete(){
 
             $query = 'DELETE FROM ' . $this->table . ' WHERE productid = :productid';
