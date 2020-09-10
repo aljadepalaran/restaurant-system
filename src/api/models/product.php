@@ -101,7 +101,7 @@
             $this->productid = htmlspecialchars(strip_tags($this->productid));
             $this->p_name = htmlspecialchars(strip_tags($this->p_name));
             $this->p_details = htmlspecialchars(strip_tags($this->p_details));
-            $this->surname = htmlspecialchars(strip_tags($this->surname));
+            $this->price = htmlspecialchars(strip_tags($this->price));
 
             $statement->bindParam(':productid', $this->productid);
             $statement->bindParam(':p_name', $this->p_name);
